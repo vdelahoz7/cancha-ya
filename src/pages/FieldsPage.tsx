@@ -27,9 +27,7 @@ const FieldsPage: React.FC = () => {
           field.location.toLowerCase().includes(searchTerms)
       );
     }
-    
-    // Here you would normally filter by date as well
-    
+
     setFilteredFields(filtered);
   };
 
@@ -39,15 +37,12 @@ const FieldsPage: React.FC = () => {
       [filterType]: value
     }));
     
-    // Apply filters (in a real app, this would be more sophisticated)
     let filtered = fieldsData;
     
-    // Filter by availability if needed
     if (filters.availability === 'available') {
       filtered = filtered.filter(field => field.availability.includes('Disponible'));
     }
     
-    // Sort fields
     switch(filters.sort) {
       case 'price-low':
         filtered = [...filtered].sort((a, b) => a.price - b.price);

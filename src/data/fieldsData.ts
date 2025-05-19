@@ -17,7 +17,7 @@ export const fieldsData: Field[] = [
     location: 'Cra 46 # 76',
     price: 55000,
     rating: 4.0,
-    image: 'https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg',
+    image: 'https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg',
     features: ['Césped sintético', '7 vs 7', 'Iluminación', 'Cafetería'],
     availability: 'Disponible hoy'
   },
@@ -27,7 +27,7 @@ export const fieldsData: Field[] = [
     location: 'Cra 21 # 60',
     price: 50000,
     rating: 3.5,
-    image: 'https://images.pexels.com/photos/3656870/pexels-photo-3656870.jpeg',
+    image: 'https://images.pexels.com/photos/12039818/pexels-photo-12039818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     features: ['Césped natural', '11 vs 11', 'Iluminación', 'Vestuarios'],
     availability: 'Disponible hoy'
   },
@@ -47,7 +47,7 @@ export const fieldsData: Field[] = [
     location: 'Calle 80 # 23',
     price: 45000,
     rating: 4.2,
-    image: 'https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg',
+    image: 'https://images.pexels.com/photos/27299916/pexels-photo-27299916/free-photo-of-a-soccer-ball-and-a-pair-of-pink-shoes-are-on-the-ground.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     features: ['Césped sintético', '5 vs 5', 'Iluminación', 'Cafetería'],
     availability: 'No disponible hoy'
   },

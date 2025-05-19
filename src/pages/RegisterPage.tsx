@@ -24,13 +24,11 @@ const RegisterPage: React.FC = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Check if passwords match
     if (formData.password !== formData.confirmPassword) {
       alert('Las contraseñas no coinciden');
       return;
     }
     
-    // Handle registration logic here
     console.log('Register submitted:', formData);
   };
 

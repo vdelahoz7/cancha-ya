@@ -21,11 +21,9 @@ const ContactPage: React.FC = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // This would normally send the form data to a server
     console.log('Form submitted:', formData);
     setSubmitted(true);
     
-    // Reset form after submission
     setTimeout(() => {
       setFormData({
         name: '',

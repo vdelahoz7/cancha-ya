@@ -95,7 +95,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* How It Works Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">¿Cómo funciona?</h2>
           
@@ -120,7 +119,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* Testimonials Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Lo que dicen nuestros clientes</h2>
           
@@ -131,7 +129,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
         <div className="bg-green-600 rounded-xl p-8 text-center text-white mb-16">
           <h2 className="text-3xl font-bold mb-4">¿Listo para jugar?</h2>
           <p className="text-xl mb-6">No pierdas tiempo buscando cancha. Reserva ahora y enfócate en lo que importa: ¡jugar al fútbol!</p>
