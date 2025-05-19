@@ -9,7 +9,7 @@ import {
     MapPin,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import {Button} from "react-day-picker";
+import Logo from "../assets/logo.jpeg"
 
 
 
@@ -27,11 +27,14 @@ export const Footer: React.FC = () => {
         <footer className="bg-gray-900 text-white w-full">
             <div className="container mx-auto px-4 sm:px-6 py-12 w-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* Brand */}
+
                     <div>
-                        <div className="flex items-center space-x-2 mb-4">
-                            <SoccerField className="h-6 w-6" />
-                            <span className="font-bold text-xl">FútbolYA</span>
+                        <div className="mb-4">
+                            <img
+                                src={Logo}
+                                alt="FútbolYA"
+                                className="h-10 w-auto"
+                            />
                         </div>
                         <p className="text-gray-400 mb-6">
                             La forma más sencilla de encontrar y reservar canchas de fútbol en tu ciudad.
@@ -48,7 +51,7 @@ export const Footer: React.FC = () => {
                             </a>
                         </div>
                     </div>
-                    {/* Quick Links */}
+
                     <div>
                         <h3 className="font-semibold text-lg mb-4">Enlaces rápidos</h3>
                         <ul className="space-y-2">
@@ -62,7 +65,6 @@ export const Footer: React.FC = () => {
                         </ul>
                     </div>
 
-                    {/* Contact */}
                     <div>
                         <h3 className="font-semibold text-lg mb-4">Contacto</h3>
                         <ul className="space-y-3">
@@ -80,7 +82,7 @@ export const Footer: React.FC = () => {
                             </li>
                         </ul>
                     </div>
-                    {/* Newsletter */}
+
                     <div>
                         <h3 className="font-semibold text-lg mb-4">Suscríbete</h3>
                         <p className="text-gray-400 mb-4">

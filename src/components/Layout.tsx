@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Percent as Soccer, Menu, X, User } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import {Footer} from "./Footer";
+import Logo from "../assets/logo.jpeg"
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -36,20 +37,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <nav 
-        className={`top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? "bg-white shadow-md py-2" 
-            : "bg-transparent py-4"
-        }`}
+        className={`top-0 left-0 right-0 z-50 transition-all duration-300 bg-gray-900 py-4 `}
       >
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center">
-            <Link 
-              to="/" 
-              className={`flex items-center space-x-2 text-gray-900`}
-            >
-              <Soccer className="h-6 w-6" />
-              <span className="font-bold text-xl">Cancha YA</span>
+            <Link to="/" className="flex items-center">
+              <img
+                  src={Logo}
+                  alt="Cancha YA logo"
+                  className="h-10 w-auto"
+              />
             </Link>
 
             <div className="hidden md:flex items-center space-x-1">
@@ -57,7 +54,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className={`px-3 py-2 rounded text-sm font-medium hover:bg-black/10 transition-colors text-gray-700 `}
+                  className={`px-3 py-2 rounded text-sm font-medium hover:text-gray-700 hover:bg-white transition-colors text-white `}
                 >
                   {link.name}
                 </Link>
@@ -67,7 +64,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="hidden md:flex items-center space-x-4">
               <Link 
                 to="/login"
-                className={`px-4 py-2 rounded-lg font-medium transition-colors "text-gray-700 hover:bg-gray-100`}
+                className={`px-4 py-2 rounded-lg font-medium transition-colors text-white hover:bg-gray-100`}
               >
                 Iniciar sesión
               </Link>
