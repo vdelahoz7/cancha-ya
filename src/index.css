@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for calendar */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #059669;
+  --rdp-background-color: #e6f7ef;
+  margin: 0;
+}
+
+.custom-day-picker .rdp-day_selected, 
+.custom-day-picker .rdp-day_selected:hover {
+  background-color: var(--rdp-accent-color);
+  color: white;
+}
+
+.custom-day-picker .rdp-day_today {
+  font-weight: bold;
+  color: var(--rdp-accent-color);
+}
+
+.custom-day-picker .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: var(--rdp-background-color);
+}
+
+/* Animation for how it works section icons */
+@keyframes pulse-green {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #dcfce7;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #a7f3d0;
+  }
+}
+
+.bg-green-100:hover {
+  animation: pulse-green 2s infinite;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
