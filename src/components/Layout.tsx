@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial scroll position
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -49,7 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               className={`flex items-center space-x-2 text-gray-900`}
             >
               <Soccer className="h-6 w-6" />
-              <span className="font-bold text-xl">FútbolYA</span>
+              <span className="font-bold text-xl">Cancha YA</span>
             </Link>
 
             <div className="hidden md:flex items-center space-x-1">
