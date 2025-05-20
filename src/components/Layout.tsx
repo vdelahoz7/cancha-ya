@@ -80,7 +80,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={`p-2 rounded-lg ${
-                  isScrolled ? "text-gray-700" : "text-gray-700"
+                  isScrolled ? "text-white" : "text-white"
                 }`}
               >
                 {isMobileMenuOpen ? (
@@ -98,7 +98,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="block px-3 py-2 rounded text-gray-700 font-medium hover:bg-gray-100"
+                  className="block px-3 py-2 rounded text-white font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -107,7 +107,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <div className="mt-4 space-y-2">
                 <Link
                   to="/login"
-                  className="block px-4 py-2 text-center rounded-lg font-medium text-gray-700 hover:bg-gray-100"
+                  className="block px-4 py-2 text-center rounded-lg font-medium text-white"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Iniciar sesión
